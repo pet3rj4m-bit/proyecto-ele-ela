@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELE y ELA en Colombia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script async src="https://cse.google.com/cse.js?cx=24fb1f6d7d76448fa"></script>
+
+
+
+    <!-- Header Principal -->
+    <header>
+        <div class="header-container">
+            <h1>ELE y ELA en Colombia</h1>
+        </div>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <div class="nav-container">
+            <span class="nav-link active" onclick="switchSection('inicio')">Inicio</span>
+            <span class="nav-link" onclick="switchSection('acerca')">Acerca de</span>
+            <span class="nav-link" onclick="switchSection('como-buscar')">Cómo buscar</span>
+            <span class="nav-link" onclick="switchSection('proceso')">Nuestro proceso</span>
+            <span class="nav-link" onclick="switchSection('contacto')">Contáctenos</span>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main>
+
+        <!-- SECCIÓN 1: INICIO -->
+        <section id="inicio" class="section-content active">
+            <div class="search-wrapper">
+                <form class="search-box-mock" id="contenedor-motor-google" onsubmit="buscarGoogle(event)">
+                    <input type="text" placeholder="¿Que deseas buscar?" id="busqueda">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div class="welcome-box">
+                <h3>¡BIENVENIDOS!</h3>
+                <p class="purpose-text">
+                    Este sitio web nace con el propósito de brindarte herramientas, recursos y estrategias que fortalezcan tus procesos de búsqueda, recuperación y análisis de la información.
+                </p>
+            </div>
+
+            <div class="skills-section">
+                <h3 class="skills-title">Aquí encontrarás contenidos orientados a mejorar tus habilidades para:</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="url(#gradient)"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </div>
+                        <h4>Realizar búsquedas académicas efectivas</h4>
+                        <p>Aprende a localizar información confiable y relevante mediante el uso de palabras clave, operadores booleanos y estrategias de búsqueda que optimizan los resultados en bases de datos académicas y motores especializados.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="url(#gradient)"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                        </div>
+                        <h4>Evaluar fuentes de información</h4>
+                        <p>Aprende a identificar fuentes confiables, pertinentes y de calidad mediante criterios de evaluación como autoría, actualidad, relevancia, veracidad y respaldo académico, fortaleciendo así tus procesos de investigación.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="url(#gradient)"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
+                        </div>
+                        <h4>Optimizar ecuaciones y estrategias de búsqueda</h4>
+                        <p>Fortalece tus habilidades para diseñar estrategias de búsqueda avanzadas mediante la combinación adecuada de palabras clave, operadores y filtros que permiten recuperar información más exacta, pertinente y de calidad académica.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="url(#gradient)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </div>
+                        <h4>Desarrollar competencias investigativas en entornos digitales</h4>
+                        <p>Desarrolla habilidades para investigar, analizar y gestionar información en entornos digitales mediante el uso de herramientas tecnológicas, recursos académicos y metodologías que fortalecen el pensamiento crítico y la producción de conocimiento.</p>
+                    </div>
+                </div>
+                <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="var(--color-ela)" />
+                    <stop offset="100%" stop-color="var(--color-ele)" />
+                  </linearGradient>
+                </svg>
+            </div>
+            <div class="bottom-mission-box">
+                <p>Nuestro objetivo es acompañarte en el aprendizaje de metodologías que permitan transformar la información en conocimiento útil, crítico y significativo para tus procesos académicos e investigativos, tomando como ejemplo el semillero de investigación de la facultad de comunicación y lenguaje de la Pontificia Universidad Javeriana llamado <strong>"De ELE a ELA cartografías epistemológicas"</strong>.</p>
+                <p class="highlight-text">¡Explora y aprende nuevas formas de acceder al conocimiento!</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: ACERCA DE -->
+        <section id="acerca" class="section-content">
+            <!-- VISTA 0: Menú Principal de Acerca De -->
+            <div id="acerca-menu" class="sub-view active">
+                <h2>Acerca de</h2>
+                <p style="text-align: center; margin-bottom: 40px;">Selecciona una de las opciones para explorar nuestro contenido o conocer al equipo.</p>
+                
+                <div class="acerca-main-grid">
+                    <!-- Recuadro 1: Teoría ELE/ELA -->
+                    <div class="acerca-main-card" onclick="navigateAcerca('acerca-teoria')">
+                        <div class="acerca-card-bg card-bg-1"></div>
+                        <h3>Fundamentos ELE y ELA en Colombia</h3>
+                        <p>Explora la evolución, contextos, tensiones y dinámicas lingüísticas.</p>
+                        <span class="click-hint">Explorar contenido ➔</span>
+                    </div>
+
+                    <!-- Recuadro 2: Quiénes Somos -->
+                    <div class="acerca-main-card" onclick="navigateAcerca('acerca-equipo')">
+                        <div class="acerca-card-bg card-bg-2"></div>
+                        <h3>¿Quiénes somos?</h3>
+                        <p>Conoce al equipo desarrollador e investigativo detrás de este proyecto.</p>
+                        <span class="click-hint">Conocer al equipo ➔</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VISTA 1: Teoría -->
+            <div id="acerca-teoria" class="sub-view">
+    <button class="btn-volver" onclick="navigateAcerca('acerca-menu')">← Volver al inicio</button>
+    <h2>Fundamentos y Contextos</h2>
+    <p style="text-align: center; margin-bottom: 30px;">Haz clic en cualquier nodo para profundizar en el tema.</p>
+
+    <div id="prezi-hub" class="prezi-hub active">
+        <div class="prezi-node" onclick="navigatePrezi('nodo-1')">Introducción ELE a ELA<br>Fundamentos y Contexto</div>
+        <div class="prezi-node" onclick="navigatePrezi('nodo-2')">Las 5 líneas de investigación</div>
+        <div class="prezi-node" onclick="navigatePrezi('nodo-3')">Lenguas nativas diversidad en Colombia</div>
+    </div>
+
+    <div id="nodo-1" class="prezi-detail">
+        <button class="btn-volver-interno" onclick="navigatePrezi('prezi-hub')">← Volver a los temas</button>
+        <h3 class="detail-title">Introducción ELE a ELA - Fundamentos y Contexto</h3>
+        <div class="detail-content">
+            <div class="video-container">
+    <video controls style="width: 100%; border-radius: 8px;">
+        <source src="videos/De_ELE_a_ELA.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+
+    <video controls style="width: 100%; border-radius: 8px;">
+        <source src="videos/concepto_semillero.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+</div>
+            
+            <p>Un semillero de investigación es un espacio académico donde estudiantes y docentes desarrollan proyectos, fortalecen habilidades investigativas y construyen conocimiento desde el análisis crítico y el trabajo colaborativo. El semillero de la Facultad de Comunicación y Lenguaje “De ELE a ELA: cartografías epistemológicas del español” investiga la enseñanza del español desde una mirada social, cultural y política, promoviendo el reconocimiento de la diversidad lingüística y el paso del español como lengua extranjera (ELE) al español como lengua adicional (ELA). Su enfoque busca comprender cómo las lenguas están atravesadas por relaciones históricas, geopolíticas y coloniales, reconociendo que el español no ocupa el mismo lugar en todos los territorios ni comunidades del país.</p>
+            <p>El proyecto también se sustenta en procesos históricos relacionados con la colonización y el reconocimiento de las comunidades indígenas en Colombia. Como señala Melo (2017), entre 1988 y 1990 el Estado colombiano asignó más de veinte millones de hectáreas como resguardos indígenas, principalmente en la Amazonía y la Orinoquía, dejando cerca del 20 % del territorio nacional bajo administración de comunidades que representaban menos del 2 % de la población. Según el autor, esta decisión buscaba frenar los procesos de colonización que amenazaban con destruir las selvas tropicales y afectar profundamente las culturas y lenguas originarias. Este contexto fortalece la reflexión del semillero sobre las relaciones entre lengua, territorio, identidad y poder, así como la necesidad de reconocer las lenguas nativas y comprender el español desde perspectivas latinoamericanas y no únicamente coloniales.</p>
+            
+            <p style="margin-top: 20px; font-weight: bold;">Referencia:</p>
+            <p>Melo, J. O. (2017). <em>Historia mínima de Colombia</em>. Turner Publicaciones.</p>
+        </div>
+    </div>
+
+    <div id="nodo-2" class="prezi-detail">
+        <button class="btn-volver-interno" onclick="navigatePrezi('prezi-hub')">← Volver a los temas</button>
+        <h3 class="detail-title">Las 5 líneas de investigación</h3>
+        <div class="detail-content">
+            <p>Según la profesora Camila, el semillero “De ELE a ELA: cartografías epistemológicas del español” se estructura en cinco líneas de investigación que buscan ampliar la comprensión de la enseñanza del español desde perspectivas críticas, sociales y culturales. La primera línea corresponde a enfoques de métodos y metodologías críticas, orientada al análisis de las formas de enseñanza e investigación del aprendizaje del español. La segunda aborda políticas lingüísticas, marcos curriculares y formación docente, enfocándose en lineamientos educativos y en cómo se forman los futuros maestros de español. La tercera línea se centra en la creación de materiales didácticos y mediaciones tecnológicas, explorando nuevas formas de producción de recursos educativos apoyados por la tecnología. La cuarta línea, lenguajes estéticos y enseñanza del español, investiga el uso del cine, la música, el teatro y la literatura como herramientas pedagógicas. Finalmente, la quinta línea se enfoca en el cambio epistemológico de ELE a ELA, reflexionando sobre las implicaciones históricas, políticas y culturales de comprender el español como lengua adicional y no únicamente como lengua extranjera (Camila, 2026).</p>
+            
+            <p style="margin-top: 10px; font-style: italic;">Camila. (2026). Comunicación personal sobre el semillero De ELE a ELA: cartografías epistemológicas del español [Comunicación personal]. Pontificia Universidad Javeriana.</p>
+
+            <div class="lineas-img-container">
+                <img src="linea 1 de investigacion.png" alt="Línea 1">
+                <img src="linea 2 de investigacion.png" alt="Línea 2">
+                <img src="linea 3 de investigacion.png" alt="Línea 3">
+                <img src="linea 4 de investigacion.png" alt="Línea 4">
+                <img src="linea 5 de investigacion.png" alt="Línea 5">
+            </div>
+        </div>
+    </div>
+
+    <div id="nodo-3" class="prezi-detail">
+        <button class="btn-volver-interno" onclick="navigatePrezi('prezi-hub')">← Volver a los temas</button>
+        <h3 class="detail-title">Lenguas nativas diversidad en Colombia</h3>
+        <div class="detail-content">
+            <p>Colombia es uno de los países con mayor diversidad lingüística en América Latina. Actualmente, el país reconoce oficialmente 68 lenguas nativas, conformadas por 65 lenguas indígenas, 2 lenguas criollas y 1 lengua romaní perteneciente al pueblo Rrom o gitano. Estas lenguas representan una parte fundamental de la identidad cultural, histórica y territorial de las comunidades que las preservan y transmiten de generación en generación.</p>
+            <p>Las lenguas nativas se distribuyen en diferentes regiones del país. En La Guajira predomina el wayuunaiki; en la Amazonía se hablan lenguas como tikuna, huitoto, cubeo, tucano, yagua, bora y andoque; mientras que en la Orinoquía sobresalen el sikuani, piapoco, cuiba y sáliba. En la región Pacífica, especialmente en Chocó y Cauca, se encuentran lenguas como emberá, wounaan y eperara siapidara. Por su parte, en la Sierra Nevada de Santa Marta se conservan el ika o arhuaco, kogui y damana, y en los Andes, particularmente en Cauca y Nariño, se hablan lenguas como nasa yuwe y namtrik.</p>
+            <p>Además de las lenguas indígenas, Colombia cuenta con expresiones lingüísticas criollas como el creole sanandresano en San Andrés y Providencia, de base léxica inglesa, y el palenquero o ri palenge en San Basilio de Palenque, resultado de la mezcla de raíces africanas y españolas. Asimismo, las comunidades Rrom conservan el romaní como parte de su identidad cultural. Muchas de estas lenguas enfrentan actualmente riesgos de desaparición, por lo que su protección y revitalización constituyen un desafío importante para el país.</p>
+            
+            <h4 style="margin-top: 20px;">Referencias:</h4>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 10px;">Ministerio de Cultura de Colombia. (s.f.). <em>Lenguas nativas de Colombia</em>. https://mng.mincultura.gov.co/areas/poblaciones/APP-de-lenguas-nativas/Paginas/default.aspx</li>
+                <li style="margin-bottom: 10px;">Ministerio de Educación Nacional. (s.f.). <em>Lenguas nativas y educación intercultural</em>. https://www.mineducacion.gov.co</li>
+                <li style="margin-bottom: 10px;">Ley 1381 de 2010. Por la cual se reconoce, fomenta, protege, usa, preserva y fortalece las lenguas de los grupos étnicos de Colombia y se dictan normas sobre su reconocimiento y uso oficial. Diario Oficial n.º 47618. 26 de enero de 2010. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=38741</li>
+            </ul>
+        </div>
+    </div>
+</div>
+            <!-- VISTA 2: El Equipo -->
+            <div id="acerca-equipo" class="sub-view">
+                <button class="btn-volver" onclick="navigateAcerca('acerca-menu')">← Volver al inicio</button>
+                <h2>¿Quiénes somos?</h2>
+                <p style="text-align: center; margin-bottom: 50px;">Conoce al equipo de investigación y desarrollo.</p>
+
+                <div class="team-list">
+    <div class="team-member">
+        <div class="team-photo">
+            <img src="perfil1.jpg" alt="Andrea" class="foto-perfil-redonda">
+        </div>
+        <div class="team-info">
+            <h4>ANDREA JAZMÍN ALDANA RODRÍGUEZ</h4>
+            <p class="team-career">Estudiante de Ciencias de la Información, Bibliotecología y Archivística</p>
+            <p class="team-uni">Pontificia Universidad Javeriana</p>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <div class="team-photo">
+            <img src="perfil2.jpg" alt="Laura" class="foto-perfil-redonda">
+        </div>
+        <div class="team-info">
+            <h4>LAURA CECILIA BUITRAGO BARRERA</h4>
+            <p class="team-career">Estudiante de Ciencias de la Información, Bibliotecología y Archivística</p>
+            <p class="team-uni">Pontificia Universidad Javeriana</p>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <div class="team-photo">
+            <img src="perfil3.jpg" alt="Marly" class="foto-perfil-redonda">
+        </div>
+        <div class="team-info">
+            <h4>MARLY JULIETH PEÑA SANTAMARÍA</h4>
+            <p class="team-career">Estudiante de Ciencias de la Información, Bibliotecología y Archivística</p>
+            <p class="team-uni">Pontificia Universidad Javeriana</p>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <div class="team-photo">
+            <img src="perfil4.jpg" alt="Pedro" class="foto-perfil-redonda">
+        </div>
+        <div class="team-info">
+            <h4>PEDRO SAMUEL JAMAICA RODRÍGUEZ</h4>
+            <p class="team-career">Estudiante de Ciencias de la Información, Bibliotecología y Archivística</p>
+            <p class="team-uni">Pontificia Universidad Javeriana</p>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <div class="team-photo">
+            <img src="perfil5.jpg" alt="Lina" class="foto-perfil-redonda">
+        </div>
+        <div class="team-info">
+            <h4>LINA KATHERIN MIRANDA RINCÓN</h4>
+            <p class="team-career">Estudiante de Ciencias de la Información, Bibliotecología y Archivística</p>
+            <p class="team-uni">Pontificia Universidad Javeriana</p>
+        </div>
+    </div>
+</div>
+</section>
+        <!-- SECCIÓN 3: CÓMO BUSCAR -->
+        <section id="como-buscar" class="section-content">
+            
+            <div id="como-buscar-menu" class="sub-view active">
+                <div class="cb-hero">
+                    <h2>Aprende a cómo construir tu propia<br><span class="highlight-text">ecuación de búsqueda</span></h2>
+                    <p class="cb-hero-text">Aprender a buscar información es clave para investigar bien. Con estas herramientas podrás conectar, separar o excluir palabras clave, haciendo que tus búsquedas sean más rápidas y precisas. ¡Sigue leyendo y domina el arte de buscar!</p>
+                    <button class="cb-btn-main" onclick="navigateComoBuscar('como-buscar-pasos')">Nosotros te enseñamos ➔</button>
+                </div>
+                <br>
+                <H1 style="color: darkblue; text-align: center;">Comienza a emplear tus búsquedas</H1>
+                <br>
+                <div class="acerca-main-grid">
+                    <!-- Recuadro 1: Teoría ELE/ELA -->
+                    <div class="acerca-main-card" onclick="navigateAcerca('InteligenArti')">
+                        <div class="acerca-card-bg card-bg-1"></div>
+                        <h1>IA</h1>
+                    </div>
+
+                    <!-- Recuadro 2: Quiénes Somos -->
+                    <div class="acerca-main-card" onclick="navigateAcerca('BaseDeDatos')">
+                        <div class="acerca-card-bg card-bg-2"></div>
+                        <h1>Base de datos</h1>
+                    </div>
+                </div>
+            </div>
+
+           <div id="BaseDeDatos" class="sub-view" style="padding: 0 7% 0 7%;">
+                <button class="btn-volver" onclick="navigateAcerca('como-buscar-menu')">← Volver al inicio</button> <br>
+
+                <h1>BÚSQUEDA EN BASES DE DATOS + ANÁLISIS DE RESULTADOS</h1>
+                <br>
+                <h3>ECUACIÓN PARA BASES DE DATOS</h3>
+                <p>Es una combinación de palabras clave y operadores booleanos los cuales siempre deben ir en mayúscula para que cumplan su función, como los siguientes símbolos: AND, OR, NOT, “ ”, *. Se usa para encontrar información precisa en una base de datos. Sirve para conectar ideas, incluir sinónimos o excluir temas, haciendo que la búsqueda sea más rápida, ordenada y relevante.</p>
+                <br><h3>PASOS PARA CREAR UNA ECUACIÓN DE BÚSQUEDA</h3>
+                <br>
+                <img width="80%" src="Images/BaseDeDatos/image1.jpeg" alt="">
+                <br><br><h3>ECUACIÓN DE BÚSQUEDA</h3>
+                <p>La ecuación de búsqueda final se logró realizando los pasos sencillos para crearla que se encuentra en la infografía anterior. Esta se puede utilizar en cualquiera de las bases de datos con las que cuenta la Pontificia Universidad Javeriana.</p>
+                <br>
+                <img width="80%" src="Images/BaseDeDatos/image2.jpeg" alt="">
+                <br><br><h3>COMPARACIÓN DE RESULTADOS</h3>
+                <p>Se realiza una comparación de los resultados arrojados al realizar la búsqueda en las bases de datos académicas SCOPUS y WEB OF SCIENCE.</p>
+                <br>
+                <img width="80%" src="Images/BaseDeDatos/image3.jpeg" alt="">
+                <br><br><h3>COMPARACIÓN DE RESULTADOS</h3>
+                <p>Se realiza un análisis sencillo de los resultados obtenidos a la búsqueda hecha en las bases de datos académicas SCOPUS y WEB OF SCIENCE.</p>
+                <br>
+                <img width="80%" src="Images/BaseDeDatos/image4.jpeg" alt="">
+
+
+
+                <h1 style="text-align: center;">RESULTADOS DE BÚSQUEDA</h1>
+                <h3 style="text-align: center;">ALGUNAS FUENTES COMO RESULTADO DE LA BÚSQUEDA</h3>
+
+                <table border="1" cellpadding="10" cellspacing="0" style="border-color: darkgray;">
+    
+                <tr>
+                    <td align="center">
+                        <!-- Imagen gov.co -->
+                        <img src="Images/BaseDeDatos/Tabla/image1.jpeg" alt="gov.co" width="120">
+                    </td>
+
+                    <td>
+                        <a href="https://www.mdpi.com/2226-471X/10/5/107">
+                        https://www.mdpi.com/2226-471X/10/5/107
+                        </a>
+                    <br><br>
+
+                        <a href="https://revistas.uptc.edu.co/index.php/linguistica_hispanica/article/view/13188">
+                            https://revistas.uptc.edu.co/index.php/linguistica_hispanica/article/view/13188
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <!-- Imagen Universidad del Valle -->
+                        <img src="Images/BaseDeDatos/Tabla/image2.jpeg" alt="Universidad del Valle" width="120">
+                    </td>
+
+                    <td>
+                        <a href="https://revistas.uptc.edu.co/index.php/linguistica_hispanica/article/view/13188">
+                        https://revistas.uptc.edu.co/index.php/linguistica_hispanica/article/view/13188
+                        </a>
+
+                    <br><br>
+
+                        <a href="https://revistas.uptc.edu.co/index.php/linguistica_hispanica/article/view/9373">
+                        https://revistas.uptc.edu.co/index.php/linguistica_hispanica/article/view/9373
+                        </a>
+                    </td>
+                </tr>
+
+    <tr>
+        <td align="center">
+            <!-- Imagen Libros del Ministerio -->
+            <img src="Images/BaseDeDatos/Tabla/image3.jpeg" alt="Libros del Ministerio" width="120">
+        </td>
+
+        <td>
+            <a href="https://www.scopus.com/pages/publications/84881472812?origin=resultslist">
+                https://www.scopus.com/pages/publications/84881472812?origin=resultslist
+            </a>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center">
+            <!-- Imagen UNESCO -->
+            <img src="Images/BaseDeDatos/Tabla/image4.jpeg" alt="UNESDOC" width="120">
+        </td>
+
+        <td>
+            <a href="https://www.webofscience.com/wos/woscc/full-record/WOS:001671613000007">
+                https://www.webofscience.com/wos/woscc/full-record/WOS:001671613000007
+            </a>
+
+            <br><br>
+
+            <a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000762549000001">
+                https://www.webofscience.com/wos/woscc/full-record/WOS:000762549000001
+            </a>
+        </td>
+    </tr>
+    </table>
+            </div> 
+
+            <div id="InteligenArti" class="sub-view">
+                <button class="btn-volver" onclick="navigateAcerca('como-buscar-menu')">← Volver al inicio</button> <br>
+
+                <img src="Images/WhatsApp Image 2026-05-25 at 12.57.01 AM_Nero_AI_Image_Upscaler_Photo_Face.jpeg" style="width: 60%;" alt="">
+                <h1 style="padding: 0 5% 0 5%;">Partes del prompt</h1>
+                <p style="padding: 0 5% 0 5%;">🔵 El Rol define el perfil profesional desde el cual responde la inteligencia artificial y orienta la perspectiva de análisis.
+🩷 La Acción especifica las actividades que la IA debe desarrollar. <br>
+🔴 la Tarea concreta los productos o resultados esperados. <br>
+🟣 El Contexto presenta el tema central de investigación. <br>
+🟠 el Objetivo explica la finalidad del proceso de búsqueda y análisis. <br>
+🟢 La Audiencia identifica a quién está dirigido el contenido (Ley de Lenguas Nativas 1381 de 2010) <br>
+🟡 la Plataforma señala el espacio donde será publicado o utilizado. <br>
+🟤 Los Ejemplos ayudan a guiar la construcción de la respuesta <br>
+⚪ las Opciones amplían las posibilidades de análisis y personalización, <br>
+🟦 el Estilo junto con 🟧 el Tono determinan la forma lingüística y comunicativa del resultado final.</p>
+                <br><h1 style="text-align: center; font-size: 3.8rem;">Prompt</h1>
+                <p style="padding: 0 5% 0 5%;">🔵 Eres Profesional/Investigador de Lenguas Modernas, especializado en análisis crítico y epistemológico del lenguaje. 🩷 Busca información verídica en fuentes confiables, analiza investigaciones académicas y organiza los hallazgos encontrados. 🟣 El tema central es el cambio de enfoque del español como Lengua Extranjera (ELE) hacia Español como Lengua Adicional (ELA) en Colombia, considerando sus implicaciones históricas, culturales, sociales y políticas. 🟠 El objetivo es comprender qué se ha investigado sobre el tema, identificar tendencias, tensiones epistemológicas y vacíos investigativos en el campo. 🟢 La información está dirigida a la Comunidad Académica, Docentes de Lenguas, Entidades Diseñadoras de Política Pública y Gestión Educativa, Mediadores Culturales y Organizaciones Territoriales. 🟡 El contenido será publicado en un Motor de Búsqueda diseñado específicamente para consulta e investigación sobre ELE y ELA. 🔴 La tarea consiste en listar los resultados por orden de relevancia, realizar un mapa conceptual de los tres principales hallazgos y elaborar un análisis comparativo de la información encontrada. 🟤 Como ejemplo metodológico, pueden incluirse categorías relacionadas con enseñanza del español, políticas lingüísticas, lenguas nativas, contextos fronterizos, colonialidad y diversidad lingüística. ⚪ Las opciones de análisis pueden abarcar enfoques pedagógicos, sociolingüísticos, culturales, geopolíticos y decoloniales para ampliar la interpretación de los resultados. ⚫ Como resultado final, desarrolla un Análisis Matrizado de Contraste Epistemológico y una Propuesta de Lineamiento Curricular basada en la evidencia recopilada. 🟦 El estilo debe ser formal, académico, analítico y deconstructivo, utilizando terminología especializada y argumentación crítica. 🟧 El tono debe mantenerse profesional, reflexivo y crítico, orientado a la investigación y producción de conocimiento científico.</p>
+                <br><h1 style="text-align: center;">TABLA DE ANÁLISIS DE RESULTADOS</h1>
+                <br>
+                <div>
+                    <table border="1" cellpadding="8" cellspacing="0" style="border-color: darkgray;">
+    <tr>
+        <th>Aspecto comparativo</th>
+        <th>CHATGPT</th>
+        <th>GEMINI</th>
+        <th>COPILOT</th>
+    </tr>
+
+    <tr>
+        <td><b>Enfoque principal</b></td>
+        <td>Presenta un análisis profundamente epistemológico y deconstructivo del cambio ELE y ELA.</td>
+        <td>Enfatiza una visión glotopolítica, sociolingüística y decolonial del fenómeno.</td>
+        <td>Explica el cambio desde una perspectiva más general, educativa e inclusiva.</td>
+    </tr>
+
+    <tr>
+        <td><b>Nivel de profundidad</b></td>
+        <td>Muy alto: desarrolla teoría, matrices epistemológicas, lineamientos curriculares y lectura crítica del concepto.</td>
+        <td>Alto: utiliza lenguaje académico especializado y conecta ELA con globalización, translenguaje y derechos lingüísticos.</td>
+        <td>Medio: resume hallazgos y organiza información de manera clara y accesible.</td>
+    </tr>
+
+    <tr>
+        <td><b>Concepto más importante</b></td>
+        <td>El paso de “lengua extranjera” a “lengua adicional” como ruptura epistemológica y política.</td>
+        <td>El ELA entendido como “repertorio plurilingüe” y práctica de justicia lingüística.</td>
+        <td>El reconocimiento de la diversidad lingüística colombiana como eje del cambio curricular.</td>
+    </tr>
+
+    <tr>
+        <td><b>Perspectiva crítica</b></td>
+        <td>Critica el eurocentrismo, la hegemonía peninsular y la visión normativa del español.</td>
+        <td>Cuestiona el modelo colonial del hablante nativo y el paradigma monolingüe.</td>
+        <td>Señala la necesidad de contextualizar el español desde realidades locales.</td>
+    </tr>
+
+    <tr>
+        <td><b>Relación con el territorio</b></td>
+        <td>Habla de territorialidad lingüística y contextualización sociocultural del español.</td>
+        <td>Considera el territorio como espacio de mediación cultural, conflicto y negociación identitaria.</td>
+        <td>Relaciona el ELA con integración territorial y diversidad cultural.</td>
+    </tr>
+
+    <tr>
+        <td><b>Diversidad lingüística</b></td>
+        <td>Integra lenguas indígenas, criollas, lengua de señas y migración como núcleo del análisis.</td>
+        <td>Destaca translenguaje, superdiversidad y coexistencia de repertorios lingüísticos.</td>
+        <td>Reconoce comunidades indígenas, migrantes y sordoseñantes.</td>
+    </tr>
+
+    <tr>
+        <td><b>Cambio pedagógico</b></td>
+        <td>Propone pasar de enseñanza normativa a mediación intercultural y aprendizaje situado.</td>
+        <td>Sugiere pedagogías de translenguaje, cartografía lingüística y tareas comunitarias reales.</td>
+        <td>Recomienda currículo inclusivo y formación docente intercultural.</td>
+    </tr>
+
+    <tr>
+        <td><b>Visión del docente</b></td>
+        <td>Mediador intercultural, investigador crítico y diseñador curricular.</td>
+        <td>Gestor sociocomunitario y garante de derechos lingüísticos.</td>
+        <td>Docente capacitado en inclusión y mediación cultural.</td>
+    </tr>
+
+    <tr>
+        <td><b>Impacto político</b></td>
+        <td>Relaciona ELA con justicia lingüística y políticas educativas decoloniales.</td>
+        <td>Conecta ELA con cohesión social, derechos colectivos y políticas migratorias.</td>
+        <td>Lo vincula con educación bilingüe e inclusión educativa.</td>
+    </tr>
+
+    <tr>
+        <td><b>Lenguaje utilizado</b></td>
+        <td>Académico, analítico, deconstructivo y altamente conceptual.</td>
+        <td>Sociolingüístico, crítico y glotopolítico.</td>
+        <td>Claro, sintético y divulgativo-académico.</td>
+    </tr>
+
+    <tr>
+        <td><b>Elemento diferencial más fuerte</b></td>
+        <td>El análisis matizado de contraste epistemológico entre ELE y ELA.</td>
+        <td>La noción de translenguaje y sujeto plurilingüe ecológico.</td>
+        <td>La organización clara y práctica de resultados académicos relevantes.</td>
+    </tr>
+
+    <tr>
+        <td><b>Coincidencia central entre las tres IA</b></td>
+        <td>Todas coinciden en que ELA supera la visión tradicional de ELE y reconoce la diversidad lingüística, cultural y social de Colombia.</td>
+        <td>Todas entienden el ELA como un enfoque más inclusivo, contextual y crítico frente al modelo tradicional.</td>
+        <td>Todas identifican una transición desde enfoques normativos hacia perspectivas plurilingües e interculturales.</td>
+    </tr>
+</table>
+                </div> 
+                <br>
+                <div name="tabla2">
+                    <table border="1" cellpadding="10" cellspacing="0" style="border-color: darkgray;">
+    
+    <tr>
+        <td align="center">
+            <!-- Imagen gov.co -->
+            <img src="Images/Tabla2/image1.png" alt="gov.co" width="120">
+        </td>
+
+        <td>
+            <a href="https://www.caroycuervo.gov.co/?utm_source=chatgpt.com">
+                https://www.caroycuervo.gov.co/?utm_source=chatgpt.com
+            </a>
+            <br><br>
+
+            <a href="https://selloeditorial.caroycuervo.gov.co/documentos/perspectivas-fin-hispanidad.pdf">
+                https://selloeditorial.caroycuervo.gov.co/documentos/perspectivas-fin-hispanidad.pdf
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center">
+            <!-- Imagen Universidad del Valle -->
+            <img src="Images/Tabla2/image2.png" alt="Universidad del Valle" width="120">
+        </td>
+
+        <td>
+            <a href="https://bibliotecadigital.univalle.edu.co/entities/publication/95d5797b-45fa-42e8-89c6-3f97e33a2063?utm_source=copilot.com">
+                https://bibliotecadigital.univalle.edu.co/entities/publication/95d5797b-45fa-42e8-89c6-3f97e33a2063?utm_source=copilot.com
+            </a>
+
+            <br><br>
+
+            (Revisión exploratoria en la investigación de la enseñanza del español como lengua extranjera (ELE) en Colombia : tópicos, tendencias, áreas de interés y características)
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center">
+            <!-- Imagen Libros del Ministerio -->
+            <img src="Images/Tabla2/image3.png" alt="Libros del Ministerio" width="120">
+        </td>
+
+        <td>
+            <a href="https://librosdelministerio.co/?utm_source=copilot.com">
+                https://librosdelministerio.co/?utm_source=copilot.com
+            </a>
+
+            <ul>
+                <li>
+                    De política y currículo:
+                    <br>
+                    Documentos de “currículo Nacional y guías para docentes de lenguas
+                    (busca “currículo”, “lenguas”, “educación intercultural”, “bilingüismo”)
+                </li>
+
+                <li>
+                    Proyectos de política lingüística y uso de lenguas:
+                    usa la funcionalidad de búsqueda interna para documentos recientes.
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center">
+            <!-- Imagen UNESCO -->
+            <img src="Images/Tabla2/image4.png" alt="UNESDOC" width="120">
+        </td>
+
+        <td>
+            <a href="https://unesdoc.unesco.org/">
+                https://unesdoc.unesco.org/
+            </a>
+
+            <br><br>
+
+            Informes y guías regionales sobre plurilingüismo, educación intercultural y derechos lingüísticos:
+            (busca “multilingual education Colombia” o “linguistic rights”)
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center">
+            <!-- Imagen Gobernación de Antioquia -->
+            <img src="Images/Tabla2/image5.png" alt="Gobernación de Antioquia" width="120">
+        </td>
+
+        <td>
+            <a href="https://www.antioquia.gov.co/">
+                https://www.antioquia.gov.co/
+            </a>
+
+            <br><br>
+
+            (informes de implementación de programas de educación intercultural)
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center">
+            <!-- Imagen UNICEF -->
+            <img src="Images/Tabla2/image6.png" alt="UNICEF Colombia" width="120">
+        </td>
+
+        <td>
+            <a href="https://www.unicef.org/colombia/">
+                https://www.unicef.org/colombia/
+            </a>
+
+            (sección educación)
+        </td>
+    </tr>
+
+    <tr>
+        <td align="center">
+            <!-- Imagen Google Académico y Universidad -->
+            <img src="Images/Tabla2/image7.png" alt="Google Académico" width="120">
+            <br><br>
+            <img src="Images/Tabla2/image8.png" alt="Universidad Francisco José de Caldas" width="120">
+        </td>
+
+        <td>
+            <a href="https://www.redalyc.org/journal/7226/722678789001/html/">
+                https://www.redalyc.org/journal/7226/722678789001/html/
+            </a>
+        </td>
+    </tr>
+
+</table>
+                </div>
+                <br>
+                <h2>Referencias:</h2>
+                <p>
+OpenAI. (2026). ChatGPT [Modelo de lenguaje de gran escala]. OpenAI <br>
+Microsoft. (2026). Microsoft Copilot [Asistente de inteligencia artificial]. Microsoft Copilot <br>
+Google DeepMind. (2026). Gemini [Modelo de inteligencia artificial]. Google Gemini <br>
+InnovaPrompt. (s. f.). InnovaPrompt. Recuperado el 24 de mayo de 2026, de InnovaPrompt</p>
+            </div>
+
+            <div id="como-buscar-pasos" class="sub-view">
+                <button class="btn-volver" onclick="navigateComoBuscar('como-buscar-menu')">← Volver a Cómo buscar</button>
+                
+                <div class="cb-section-bool-full">
+                    
+                    <div class="booleano-intro">
+                        <h3 class="cb-section-title">Los operadores booleanos</h3>
+                        <p class="cb-section-desc">Los conectores lógicos o mejor conocidos como operadores booleanos, sirven para conectar palabras o frases entre sí en una búsqueda de información. Ayudan a conectar o excluir conceptos para ampliar o limitar los resultados.</p>
+                    </div>
+
+                   <div class="booleano-row">
+    <div class="booleano-text">
+        <div class="cb-badge and-badge">AND (Y)</div>
+        <p>El operador booleano <strong>AND</strong> o en español "Y", obliga al buscador a encontrar ambos términos.</p>
+    </div>
+    <div class="booleano-img">
+        <img src="and.jpg" alt="Ejemplo de uso de AND">
+    </div>
+</div>
+
+<div class="booleano-row reverse-row">
+    <div class="booleano-text">
+        <div class="cb-badge or-badge">OR (O)</div>
+        <p>El operador booleano <strong>OR</strong> o en español "O", recupera todos los documentos que incluyan cualquiera de los términos deseados. Se usa habitualmente para sinónimos o conceptos relacionados.</p>
+    </div>
+    <div class="booleano-img">
+        <img src="or.jpg" alt="Ejemplo de uso de OR">
+    </div>
+</div>
+
+<div class="booleano-row">
+    <div class="booleano-text">
+        <div class="cb-badge not-badge">NOT (NO)</div>
+        <p>El operador booleano <strong>NOT</strong> o en español "NO", lo que hace es excluir de la búsqueda aquellos términos que acompañen este operador.</p>
+    </div>
+    <div class="booleano-img">
+        <img src="not.jpg" alt="Ejemplo de uso de NOT">
+    </div>
+</div>
+
+<div class="cb-section-trunc-full">
+    <div class="trunc-intro">
+        <h3 class="cb-section-title text-white">Los Truncadores</h3>
+        <p class="cb-section-desc text-white-muted">Estas herramientas sirven para recuperar múltiples palabras de la misma familia o para buscar los términos exactamente como los has escrito.</p>
+    </div>
+
+    <div class="booleano-row trunc-row">
+        <div class="booleano-text text-white">
+            <div class="cb-icon-badge">*</div>
+            <h4 class="trunc-title">El Asterisco</h4>
+            <p>El asterisco (*) funciona reemplazando desde un carácter a un conjunto de estos. Suele usarse al final de una raíz de palabra.</p>
+        </div>
+        <div class="booleano-img">
+            <img src="truncador_1.jpg" alt="Ejemplo de uso del Asterisco">
+        </div>
+    </div>
+
+    <div class="booleano-row reverse-row trunc-row">
+        <div class="booleano-text text-white">
+            <div class="cb-icon-badge">?</div>
+            <h4 class="trunc-title">Interrogación</h4>
+            <p>El signo de interrogación (?) se usa para reemplazar un único carácter en el medio o final de una palabra.</p>
+        </div>
+        <div class="booleano-img">
+            <img src="truncador_2.jpg" alt="Ejemplo de uso de la Interrogación">
+        </div>
+    </div>
+    
+    <div class="booleano-row trunc-row">
+        <div class="booleano-text text-white">
+            <div class="cb-icon-badge">" "</div>
+            <h4 class="trunc-title">Comillas</h4>
+            <p>Las comillas (" ") se utilizan para indicar que la búsqueda contenga la frase o concepto exacto, respetando el estricto orden de las palabras.</p>
+        </div>
+        <div class="booleano-img">
+            <img src="truncador_3.jpg" alt="Ejemplo de uso de las Comillas">
+        </div>
+    </div>
+
+    <div class="booleano-row reverse-row trunc-row" style="border-bottom: none;">
+        <div class="booleano-text text-white">
+            <div class="cb-icon-badge">( )</div>
+            <h4 class="trunc-title">Paréntesis</h4>
+            <p>Los paréntesis ( ) se usan para agrupar términos y combinar diferentes operadores en una misma estrategia de búsqueda, estableciendo el orden lógico en que el buscador debe leerla.</p>
+        </div>
+        <div class="booleano-img">
+            <img src="truncador_4.jpg" alt="Ejemplo de uso de los Paréntesis">
+        </div>
+    </div>
+</div>
+
+<div class="menciones-importantes-wrapper">
+    <div class="menciones-importantes">
+        <h3>⚠️ Menciones Importantes</h3>
+        <div class="menciones-content">
+            <p>Recuerda siempre verificar los espacios entre operadores y utilizar mayúsculas para asegurar que el motor de búsqueda los identifique correctamente.</p>
+        </div>
+        
+        <div class="menciones-imagenes">
+            <img src="importante1.jpg" alt="Mención Importante 1">
+            <img src="importante2.jpg" alt="Mención Importante 2">
+        </div>
+    </div>
+</div>
+
+                <div style="text-align: center; margin-top: 50px;">
+                    <button class="btn-volver" onclick="navigateComoBuscar('como-buscar-menu')">← Volver al inicio de Cómo buscar</button>
+                </div>
+
+                <!-- NUEVA SECCIÓN: EJERCICIO LÚDICO -->
+                <div class="ejercicio-ludico">
+                    <h3 class="cb-section-title">EJEMPLOS DE ECUACIONES</h3>
+                    <p class="ejercicio-subtitle">Una "ecuación" es la combinación de los términos con los operadores. Vamos a practicar. Completa los espacios en blanco:</p>
+                    
+                    <div class="ejercicio-grid">
+                        <!-- Columna Izquierda: Objetivos -->
+                        <div class="ejercicio-col">
+                            <h4 class="ejercicio-col-title">OBJETIVO DE BÚSQUEDA</h4>
+                            <ol class="ejercicio-list">
+                                <li>Buscar estudios de ELE en Colombia</li>
+                                <li>Buscar ELA o "Español Académico"</li>
+                                <li>Buscar investigaciones de universidades colombianas</li>
+                                <li>Buscar sobre metodología o didáctica</li>
+                            </ol>
+                        </div>
+                        
+                        <!-- Columna Derecha: Ecuaciones -->
+                        <div class="ejercicio-col">
+                            <h4 class="ejercicio-col-title">ECUACIÓN PARA COMPLETAR</h4>
+                           <!-- Columna Derecha: Ecuaciones (Reemplaza tu bloque actual de ecuacion-list por este) -->
+<div class="ecuacion-list">
+    <p>1. ELE AND <input type="text" id="ans1" placeholder="..."></p>
+    <p>2. ELA OR "<input type="text" id="ans2a" placeholder="..."> <input type="text" id="ans2b" placeholder="..."></p>
+    <p>3. universitari* AND <input type="text" id="ans3" placeholder="..."></p>
+    <p>4. <input type="text" id="ans4" placeholder="..."> OR didáctic*</p>
+    
+    <button class="btn-validar" onclick="verificarRespuestas()">Validar respuestas</button>
+    <div id="resultado-final" style="margin-top: 15px; font-weight: bold;"></div>
+</div>
+</section>
+
+        
+        <!-- SECCIÓN 5: NUESTRO PROCESO -->
+        <section id="proceso" class="section-content">
+            <h2>Nuestro proceso</h2>
+            <p style="margin-bottom: 20px;">En esta sección documentaremos paso a paso la creación de este proyecto web de búsqueda avanzada sobre ELE y ELA en Colombia.</p>
+            <br>
+            <img src="Images/ayuda.jpeg" alt="">
+        </section>
+        <!-- SECCIÓN 6: CONTÁCTENOS -->
+        <section id="contacto" class="section-content">
+            <h2>Contáctenos</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Ponte en contacto con el equipo investigador y desarrollador a través de nuestros correos institucionales.</p>
+
+            <div class="contacto-grid">
+    <div class="contacto-card">
+        <div class="contacto-photo">
+            <img src="perfil1.jpg" alt="Andrea Jazmín" class="foto-perfil-redonda">
+        </div>
+        <h4>ANDREA JAZMÍN ALDANA RODRÍGUEZ</h4>
+        <p class="contacto-career">Ciencias de la Información, Bibliotecología y Archivística</p>
+        <p class="contacto-uni">Pontificia Universidad Javeriana</p>
+        <a href="mailto:andrea.aldana@javeriana.edu.co" class="contacto-email">andrea.aldana@javeriana.edu.co</a>
+    </div>
+
+    <div class="contacto-card">
+        <div class="contacto-photo">
+            <img src="perfil2.jpg" alt="Laura Cecilia" class="foto-perfil-redonda">
+        </div>
+        <h4>LAURA CECILIA BUITRAGO BARRERA</h4>
+        <p class="contacto-career">Ciencias de la Información, Bibliotecología y Archivística</p>
+        <p class="contacto-uni">Pontificia Universidad Javeriana</p>
+        <a href="mailto:lcbuitragob@javeriana.edu.co" class="contacto-email">lcbuitragob@javeriana.edu.co</a>
+    </div>
+
+    <div class="contacto-card">
+        <div class="contacto-photo">
+            <img src="perfil3.jpg" alt="Marly Julieth" class="foto-perfil-redonda">
+        </div>
+        <h4>MARLY JULIETH PEÑA SANTAMARÍA</h4>
+        <p class="contacto-career">Ciencias de la Información, Bibliotecología y Archivística</p>
+        <p class="contacto-uni">Pontificia Universidad Javeriana</p>
+        <a href="mailto:pe_marly@javeriana.edu.co" class="contacto-email">pe_marly@javeriana.edu.co</a>
+    </div>
+
+    <div class="contacto-card">
+        <div class="contacto-photo">
+            <img src="perfil4.jpg" alt="Pedro Samuel" class="foto-perfil-redonda">
+        </div>
+        <h4>PEDRO SAMUEL JAMAICA RODRÍGUEZ</h4>
+        <p class="contacto-career">Ciencias de la Información, Bibliotecología y Archivística</p>
+        <p class="contacto-uni">Pontificia Universidad Javeriana</p>
+        <a href="mailto:p.jamaica@javeriana.edu.co" class="contacto-email">p.jamaica@javeriana.edu.co</a>
+    </div>
+
+    <div class="contacto-card">
+        <div class="contacto-photo">
+            <img src="perfil5.jpg" alt="Lina Katherin" class="foto-perfil-redonda">
+        </div>
+        <h4>LINA KATHERIN MIRANDA RINCÓN</h4>
+        <p class="contacto-career">Ciencias de la Información, Bibliotecología y Archivística</p>
+        <p class="contacto-uni">Pontificia Universidad Javeriana</p>
+        <a href="mailto:mirandarlk@javeriana.edu.co" class="contacto-email">mirandarlk@javeriana.edu.co</a>
+    </div>
+</div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 - Proyecto ELE y ELA en Colombia</p>
+    </footer>
+
+    <!-- Archivo JS -->
+    <script src="script.js"></script>
+    <script>
+function verificarRespuestas() {
+    const r1 = document.getElementById('ans1').value.trim().toLowerCase();
+    const r2a = document.getElementById('ans2a').value.trim().toLowerCase();
+    const r2b = document.getElementById('ans2b').value.trim().toLowerCase();
+    const r3 = document.getElementById('ans3').value.trim().toLowerCase();
+    const r4 = document.getElementById('ans4').value.trim().toLowerCase();
+    
+    // Validaciones
+    const v1 = (r1 === "colombia" || r1 === "colombi*");
+    const v2 = (r2a === "español" && r2b === "académico");
+    const v3 = (r3 === "colombia");
+    const v4 = (r4 === "metodolog*");
+
+    const resDiv = document.getElementById('resultado-final');
+    if (v1 && v2 && v3 && v4) {
+        resDiv.innerHTML = "¡Excelente! Todas tus respuestas son correctas.";
+        resDiv.style.color = "green";
+    } else {
+        resDiv.innerHTML = "Algunas respuestas no son correctas, intenta de nuevo.";
+        resDiv.style.color = "red";
+    }
+}
+
+function buscarGoogle(event) {
+  event.preventDefault();
+
+  let query = document.getElementById("busqueda").value;
+
+  window.location.href =
+"https://cse.google.com/cse?cx=24fb1f6d7d76448fa&q=" +
+encodeURIComponent(query);
+}
+    
+</script>
+</body>
+</html>
